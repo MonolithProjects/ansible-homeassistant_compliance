@@ -1,10 +1,10 @@
 ---
 # Enable Apparmor
 ha_fix_apparmor: yes
-  
+
 # Install and enable DBUS
 ha_fix_dbus: yes
-  
+
 # If Docker is older than minimal supported version, update to latest
 ha_fix_docker: yes
 ha_fix_docker_minimal: 20.10.17
@@ -20,10 +20,10 @@ ha_fix_osagent_version: latest
 
 # Install and enable systemd-journal-remote
 ha_fix_systemd_journal: yes
-  
+
 # Enable systemd-resolved
 ha_fix_systemd_resolved: yes
-  
+
 # Revert CGroup to version 1
 ha_fix_cgroup: yes
 

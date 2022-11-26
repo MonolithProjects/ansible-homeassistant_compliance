@@ -106,14 +106,14 @@
     changed_when: osagent_check_deb.rc == 1
 
   - name: Download OS Agent
-    ansible.builtin.get_url: 
-      url: "https://github.com/{{ osagent_download_repository }}/releases/download/{{ ha_fix_osagent_version }}/os-agent_{{ ha_fix_osagent_version }}_linux_{{ osagent_cpu_architecture }}.deb"
+    ansible.builtin.get_url:
+      url: "https://github.com/{{ ha_fix_osagent_download_repository }}/releases/download/{{ ha_fix_osagent_version }}/os-agent_{{ ha_fix_osagent_version }}_linux_{{ ha_fix_osagent_cpu_architecture }}.deb"
       dest: "/tmp/os-agent.deb"
       mode: 0700
     when: osagent_check_deb.rc == 1
 
   - name: Install OS Agent
-    ansible.builtin.apt: 
+    ansible.builtin.apt:
       deb: "/tmp/os-agent.deb"
       update_cache: yes
     when: osagent_check_deb.rc == 1
@@ -173,7 +173,7 @@
   when: ha_fix_network_manager
   block:
   - name: Install Network Manager
-    ansible.builtin.apt: 
+    ansible.builtin.apt:
       name: network-manager
       update_cache: yes
       state: present
@@ -199,7 +199,7 @@
       content: "{{ ha_fix_network_manager_conf }}"
       mode: 0644
     notify: NetworkManager restart
-  
+
   - name: Edit NetworkManager connection default file
     ansible.builtin.copy:
       dest: /etc/NetworkManager/system-connections/default
@@ -211,7 +211,7 @@
   when: ha_fix_lxc
   block:
   - name: Uninstall LXC
-    ansible.builtin.apt: 
+    ansible.builtin.apt:
       name: lxc
       state: absent
       purge: yes

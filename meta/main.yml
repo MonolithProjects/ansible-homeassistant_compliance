@@ -2,7 +2,7 @@ galaxy_info:
   author: Michal Muransky
   namespace: monolithprojects
   role_name: homeassistant_compliance
-  description: This Ansible role configure Debian 11 Operating System to be complient with Home Assistant. 
+  description: This Ansible role configure Debian 11 Operating System to be complient with Home Assistant.
   company: MonolithProjects
   license: "license (MIT)"
 
