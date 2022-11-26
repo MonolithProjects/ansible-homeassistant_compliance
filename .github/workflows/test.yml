@@ -29,5 +29,5 @@ jobs:
       - name: Molecule for Ansible
         uses: robertdebock/molecule-action@4.0.9
         with:
-          os: ${{ matrix.config.os }}
+          image: ${{ matrix.config.os }}
           tag: ${{ matrix.config.tag }}
