@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include monolithprojects.homeassistant_compliance"
+      include_role:
+        name: "monolithprojects.homeassistant_compliance"
