@@ -1,8 +1,8 @@
 # Home Assistant Supervisor compliance
 
-[![Galaxy Quality](https://img.shields.io/ansible/quality/XXXX?style=flat&logo=ansible)](https://galaxy.ansible.com/monolithprojects/homeassistant_compliance)
+[![Galaxy Quality](https://img.shields.io/ansible/quality/61013?style=flat&logo=ansible)](https://galaxy.ansible.com/monolithprojects/homeassistant_compliance)
 [![Role version](https://img.shields.io/github/v/release/MonolithProjects/ansible-homeassistant_compliance)](https://galaxy.ansible.com/monolithprojects/homeassistant_compliance)
-[![Role downloads](https://img.shields.io/ansible/role/d/XXXX)](https://galaxy.ansible.com/monolithprojects/homeassistant_compliance)
+[![Role downloads](https://img.shields.io/ansible/role/d/61013)](https://galaxy.ansible.com/monolithprojects/homeassistant_compliance)
 [![GitHub Actions](https://github.com/MonolithProjects/ansible-homeassistant_compliance/workflows/molecule%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/ansible-homeassistant_compliance/actions)
 [![License](https://img.shields.io/github/license/MonolithProjects/ansible-homeassistant_compliance)](https://github.com/MonolithProjects/ansible-homeassistant_compliance/blob/main/LICENSE)
 
