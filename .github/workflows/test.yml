@@ -24,9 +24,4 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: Molecule for Ansible
-        uses: MonolithProjects/action-molecule@v1.4.5
-        with:
-          os: ${{ matrix.config.os }}
-          tag: ${{ matrix.config.tag }}
-          molecule_command: test
-          scenario: default
+        uses: robertdebock/molecule-action@4.0.9
