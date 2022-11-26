@@ -12,8 +12,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  default:
-    name: Test the role
+  test:
+    name: Molecule test
     runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
@@ -27,9 +27,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: Molecule for Ansible
-        uses: MonolithProjects/action-molecule@v1.4.5
+        uses: robertdebock/molecule-action@4.0.9
         with:
           os: ${{ matrix.config.os }}
           tag: ${{ matrix.config.tag }}
-          molecule_command: test
-          scenario: default
