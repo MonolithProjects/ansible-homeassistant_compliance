@@ -6,8 +6,8 @@ driver:
 lint: |
   ansible-lint .
 platforms:
-  - name: "${os:-debian11}-${tag:-latest}"
-    image: "${namespace:-monolithprojects}/systemd-${os:-debian11}:${tag:-latest}"
+  - name: "debian11-latest"
+    image: "monolithprojects/systemd-debian11:latest"
     command: /sbin/init
     tmpfs:
       - /run

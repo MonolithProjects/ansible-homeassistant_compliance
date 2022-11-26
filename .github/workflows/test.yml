@@ -17,10 +17,6 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
-      matrix:
-        config:
-          - os: "debian11"
-            tag: "latest"
     steps:
       - name: checkout
         uses: actions/checkout@v3
@@ -28,6 +24,3 @@ jobs:
           path: "${{ github.repository }}"
       - name: Molecule for Ansible
         uses: robertdebock/molecule-action@4.0.9
-        with:
-          image: ${{ matrix.config.os }}
-          tag: ${{ matrix.config.tag }}
