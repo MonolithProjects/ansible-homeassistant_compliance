@@ -1,6 +1,7 @@
 ---
 - name: Prepare
   hosts: all
+  user: ansible
   become: true
   vars:
     docker_service_state: stopped
